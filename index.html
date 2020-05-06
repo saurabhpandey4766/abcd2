@@ -1,17 +1,84 @@
-hi everyone
-hi everyone
-hi everyone
-hi everyone
-hi everyone
-hi everyone
-hi everyone
-hi everyone
-hi everyone
-hi everyone
-hi everyone
-hi everyone
-hi everyone
-hi everyone
-hi everyone
-hi everyone
-hi everyone
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <link rel="icon" href="pp (1).jpg"/>	
+    <title>Simple Form Processing</title> 
+</head> 
+<style>
+body{   color: white;
+	background-color: black;
+	/*background-image: url('red_hat_logo_before_after.png');*/
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111 
+}
+
+.right {
+  right: 0;
+  background-color: black;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 500px;
+  border-radius: 50%;
+}
+</style>
+<div class="split left">
+  <div class="left">
+	<form id="form1" method="post">
+		<label>FirstName:</label> <br>
+        <input style="height:30px;font-size:14pt;" type="text" name="firstname" size="50" required/> 
+        <br> 
+        <br>  
+	<label>LastName:</label> <br> 
+        <input style="height:30px;font-size:14pt;" type="text" name="lastname" size="50"required/> 
+        <br> 
+        <br>  
+	<label>Address:</label> <br>
+        <input style="height:30px;font-size:14pt;" type="text" name="address" size="50" required/> 
+        <br> 
+        <br>  
+	<label>Email Address:</label><br> 
+        <input style="height:30px;font-size:14pt;" type="email" name="emailaddress" size="50" required/> 
+        <br> 
+        <br>  
+	<label>Password:</label> <br>
+	<input style="height:30px;font-size:14pt;" type="password" name="password" size="50" required/> <br><br>
+	<br><br><label>Choose Profile Photo</label><br><br>
+	<input type="file" accept="*/image" /><br><br><br<br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input style="height:24px;font-size:14pt;" type="submit" value="submit" />
+	</div>
+</div>
+
+
+<div class="split right">
+  <div class="centered">
+    <img src="images.png" alt="Avatar man">
+    
+  </div>
+</div>
+
+</form>
+</body> 
+</html>
+
